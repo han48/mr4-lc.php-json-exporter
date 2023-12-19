@@ -1,8 +1,8 @@
 <?php
 
-use Hyvor\JsonExporter\Collection;
-use Hyvor\JsonExporter\File;
-use Hyvor\JsonExporter\Writer;
+use Mr4Lc\JsonExporter\Collection;
+use Mr4Lc\JsonExporter\File;
+use Mr4Lc\JsonExporter\Writer;
 
 it('opens and closes file', function() {
 

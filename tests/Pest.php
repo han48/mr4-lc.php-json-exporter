@@ -13,7 +13,7 @@
 
 // uses(Tests\TestCase::class)->in('Feature');
 
-use Hyvor\JsonExporter\Writer;
+use Mr4Lc\JsonExporter\Writer;
 
 uses()->beforeEach(function() {
     $this->fileInMemory = 'php://memory';

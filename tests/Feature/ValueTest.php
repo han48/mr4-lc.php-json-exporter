@@ -2,8 +2,8 @@
 
 namespace Feature;
 
-use Hyvor\JsonExporter\File;
-use Hyvor\JsonExporter\Writer;
+use Mr4Lc\JsonExporter\File;
+use Mr4Lc\JsonExporter\Writer;
 
 class Rect {
     public int $width;

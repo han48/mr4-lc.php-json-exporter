@@ -1,6 +1,6 @@
 <?php
 
-use Hyvor\JsonExporter\Collection;
+use Mr4Lc\JsonExporter\Collection;
 
 it('starts and ends collection', function() {
 

@@ -1,21 +1,22 @@
 {
-    "name": "hyvor/php-json-exporter",
+    "name": "mr4-lc/php-json-exporter",
     "description": "Export large datasets to a JSON file without memory exhaustion",
     "type": "library",
+    "version": "0.0.1",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hyvor\\JsonExporter\\": "src/"
+            "Mr4Lc\\JsonExporter\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Supun",
-            "email": "supun@hyvor.com"
+            "name": "Mr4",
+            "email": "zzz4everzzz@live.co.uk"
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^7.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.8",

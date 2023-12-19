@@ -1,17 +1,21 @@
 <?php
-namespace Hyvor\JsonExporter;
+namespace Mr4Lc\JsonExporter;
 
 class Collection extends ValueAbstract
 {
 
     public int $itemsCount = 0;
+    protected string $key;
+    protected Writer $writer;
 
     /**
      * @param string $key Key of the collection
      * @param Writer $writer
      */
-    public function __construct(private string $key, private Writer $writer)
+    public function __construct(string $key, Writer $writer)
     {
+        $this->key = $key;
+        $this->writer = $writer;
         $this->writer->write("\"$this->key\":[");
     }
 

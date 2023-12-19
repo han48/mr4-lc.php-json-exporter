@@ -1,18 +1,27 @@
 <?php
 
-namespace Hyvor\JsonExporter;
+namespace Mr4Lc\JsonExporter;
 
-use Hyvor\JsonExporter\Exception\JsonEncodingException;
+use Mr4Lc\JsonExporter\Exception\JsonEncodingException;
 
 class Value extends ValueAbstract
 {
+    protected string $key;
+    protected $value;
+    protected Writer $writer;
+    protected bool $encode;
 
     public function __construct(
-        private string $key,
-        private mixed $value,
-        private Writer $writer,
-        private bool $encode = true
+        string $key,
+        $value,
+        Writer $writer,
+        bool $encode = true
     ) {
+        $this->key = $key;
+        $this->value = $value;
+        $this->writer = $writer;
+        $this->encode = $encode;
+
         $this->writer->write("\"$this->key\":");
 
         $json = $this->encode ? json_encode($this->value) : strval($this->value);

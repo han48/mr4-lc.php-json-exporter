@@ -1,6 +1,6 @@
 <?php
 
-namespace Hyvor\JsonExporter\Exception;
+namespace Mr4Lc\JsonExporter\Exception;
 
 use Exception;
 

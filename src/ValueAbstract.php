@@ -1,6 +1,6 @@
 <?php
 
-namespace Hyvor\JsonExporter;
+namespace Mr4Lc\JsonExporter;
 
 abstract class ValueAbstract
 {

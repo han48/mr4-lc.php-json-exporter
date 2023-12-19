@@ -4,6 +4,8 @@
 > 
 > At [Hyvor Talk](https://talk.hyvor.com), we have customers who have millions of comments on their websites, who want to export their data regularly to backup and analyze. Our first exporter was written to get all records from the database and create a JSON file from it, which took all data into memory. It worked for small websites, but larger websites could not use this as the server crashed due to memory exhaustion.So, we created this library to export data into a JSON file **in the disk** without taking it into the memory.
 
+Fork: Support PHP 7.4
+
 ## What you can do
 
 The primary purpose of this library is to export large arrays of small objects (for example, table rows) into a JSON file in the disk. You can create a JSON file with multiple collections and direct values.
@@ -30,13 +32,13 @@ Each object in a collection can be a representation of a row in a table of your 
 ## Installation
 
 ```bash
-composer require hyvor/php-json-exporter
+composer require mr4-lc/php-json-exporter
 ```
 
 ## Usage
 
 ```php
-use Hyvor\JsonExporter\File;
+use Mr4Lc\JsonExporter\File;
 
 $file = new File('export-file.json'); // you can use a relative or absolute path
 
@@ -87,7 +89,7 @@ In the above example, `getUsers()` and `getPosts()` are hypothetical functions t
 You can use [Laravel Chunking](https://laravel.com/docs/9.x/eloquent#chunking-results) to generate large collections.
 
 ```php
-use Hyvor\JsonExporter\File;
+use Mr4Lc\JsonExporter\File;
 
 $file = new File('export-file.json');
 

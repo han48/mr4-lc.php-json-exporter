@@ -1,7 +1,7 @@
 <?php
 namespace Feature;
 
-use Hyvor\JsonExporter\File;
+use Mr4Lc\JsonExporter\File;
 
 it('efficiently writes a large dataset', function() {
 

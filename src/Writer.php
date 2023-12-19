@@ -1,9 +1,9 @@
 <?php
 
-namespace Hyvor\JsonExporter;
+namespace Mr4Lc\JsonExporter;
 
-use Hyvor\JsonExporter\Exception\FileOpenException;
-use Hyvor\JsonExporter\Exception\FileWriteException;
+use Mr4Lc\JsonExporter\Exception\FileOpenException;
+use Mr4Lc\JsonExporter\Exception\FileWriteException;
 
 class Writer
 {
@@ -14,6 +14,7 @@ class Writer
      */
     public static bool $SAVE = false;
     public string $written = '';
+    protected string $filename;
 
     /**
      * @var resource
@@ -23,9 +24,9 @@ class Writer
     /**
      * @throws FileOpenException
      */
-    public function __construct(public string $filename)
+    public function __construct(string $filename)
     {
-
+        $this->filename = $filename;
         $handler = fopen($this->filename, 'w');
 
         if (!$handler) {

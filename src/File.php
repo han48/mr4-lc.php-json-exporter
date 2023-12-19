@@ -1,8 +1,8 @@
 <?php
 
-namespace Hyvor\JsonExporter;
+namespace Mr4Lc\JsonExporter;
 
-use Hyvor\JsonExporter\Exception\FileOpenException;
+use Mr4Lc\JsonExporter\Exception\FileOpenException;
 
 class File
 {
@@ -34,7 +34,7 @@ class File
         return $collection;
     }
 
-    public function value(string $key, mixed $value, bool $encode = true) : self
+    public function value(string $key, $value, bool $encode = true) : self
     {
 
         if (isset($this->lastValue)) {

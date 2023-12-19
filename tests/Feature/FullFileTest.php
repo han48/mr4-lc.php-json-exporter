@@ -1,7 +1,7 @@
 <?php
 
-use Hyvor\JsonExporter\File;
-use Hyvor\JsonExporter\Writer;
+use Mr4Lc\JsonExporter\File;
+use Mr4Lc\JsonExporter\Writer;
 
 it('creates a full JSON file', function() {
 
